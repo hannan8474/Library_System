@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library System</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="./src/js/content.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+    <link rel="icon" type="image/x-icon" href="./assets/Images/favicon.ico">
+</head>
+<body>
+    <header>
+        <h2 class="first_heading">Library System</h2>
+        <nav class="nav_bar">
+            <ul>
+                <li title="Go to Home"><a href="../../Index.html" class="navigation">Home</a></li>
+                <li title="Go to Contact Page"><a href="../../src/html/contact.html" class="navigation">Contact</a></li>
+                <li title="Go to Visit us Page"><a href="../../src/html/visit_us.html" class="navigation">Visit Us</a></li>
+            </ul>
+        </nav>
+        <div class="btn">
+            <input type="text" placeholder="Search" class="search">
+            <button class="search_btn">
+                Search
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <form action="" class="form-setting" id="form-book-add">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="FormControlInput1" placeholder="Your name" value="">
+              </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Book Name</label>
+              <input type="text" class="form-control" id="FormControlInput2" placeholder="Book name" value="">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Author Name</label>
+              <input type="text" class="form-control" id="FormControlInput3" placeholder="Author name" value="">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">ISBN Number</label>
+              <input type="text" class="form-control" id="FormControlInput4" placeholder="ABC123" value="">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Price</label>
+              <input type="text" class="form-control" id="FormControlInput5" placeholder="R.s 123" value="">
+            </div>
+            <button type="submit" class="search_btn">Add Book</button>
+          </form>
+
+          <table id="book-table" class="table-style">
+            <thead>
+              <tr>
+                <th class="table-headings">Name</th>
+                <th class="table-headings">Book</th>
+                <th class="table-headings">Author</th>
+                <th class="table-headings">ISBN</th>
+                <th class="table-headings">Price</th>
+              </tr>
+            </thead>
+            <tbody id="book-table-body">
+              
+            </tbody>
+          </table>
+
+    </main>
+    <footer></footer>
+</body>
+</html>
